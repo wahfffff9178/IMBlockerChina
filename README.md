@@ -1,7 +1,5 @@
 # IMBlocker: 智能屏蔽输入法
 
-[English version](https://github.com/reserveword/IMBlocker/blob/master/README.en.md)
-
 ## 简介
 
 IMBlocker 是一款 [Minecraft](https://minecraft.net/) 模组，能够在游戏中自动切换输入法开关状态。
@@ -36,6 +34,7 @@ IMBlocker 模组能够识别当前游戏状态，并自动启用/禁用输入法
     - 欢迎提出建议或反馈
 
 ## 已支持的具有自定义GUI实现的模组
+*## 虽然MinecraftChina好像没这些mod*
 
 [Roughly Enough Items](https://github.com/shedaniel/RoughlyEnoughItems)  
 [EMI](https://github.com/emilyploszaj/emi)  
@@ -55,9 +54,4 @@ IMBlocker 模组能够识别当前游戏状态，并自动启用/禁用输入法
 
 *在 Fabric 下使用此模组时需要手动使用压缩软件将其 JAR 根目录下名为“essential-<32位序列码>”的文件提取到模组文件夹并**移除原模组文件**
 
-## 致谢
-
-感谢 [TimmyOVO](https://www.mcbbs.net/?1696224) 制作的 [InputMethodBlocker](https://www.mcbbs.net/thread-688825-12-1.html) ，启发我制作这个mod  
-注意，原贴中代码地址已失效，目前 Github 上的仓库为 [InputMethodBlocker](https://github.com/lss233/InputMethodBlocker)  
-
-模组 Logo by [@Halogly](https://github.com/Halogly)
+****虽然MinecraftChina还在用Forge和NeoForge***

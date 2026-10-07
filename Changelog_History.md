@@ -46,7 +46,7 @@
 <br>
 
 # 5.5.3
- - Linux：支持特定环境下定制的输入法控制增强实现（[#143](https://github.com/reserveword/IMBlocker/issues/143)）
+ - Linux：支持特定环境下定制的输入法控制增强实现
  
 <br>
 
@@ -94,21 +94,21 @@ Windows 游戏内输入法已完成全版本移植
 
 # 5.4.4
  - 改进了英文状态的实现方式，现在可以正常对非微软系列输入法生效，详见游戏内“英文状态实现方式”配置项
- - 原生兼容 Essential Mod。**在 Fabric 下此模组需要[额外配置](https://github.com/reserveword/IMBlocker?tab=readme-ov-file#已支持的具有自定义gui实现的模组)**
+ - 原生兼容 Essential Mod。**在 Fabric 下此模组需要[额外配置](https://github.com/wahfffff9178/IMBlockerChina?tab=readme-ov-file#已支持的具有自定义gui实现的模组)**
  
 <br>
 
 # 5.4.3.1
- - 完全解决 FTB 文本框的性能问题（[#114](https://github.com/reserveword/IMBlocker/issues/114)）
+ - 完全解决 FTB 文本框的性能问题
  
 <br>
 
 # 5.4.3
- - 所有文本光标回调触发时进行额外验证以防止某些模组滥用引发性能问题（[#114](https://github.com/reserveword/IMBlocker/issues/114)）
+ - 所有文本光标回调触发时进行额外验证以防止某些模组滥用引发性能问题
  - 增强可见性检测技术的模组兼容性
  - 增加实用 Linux 兼容性设置，包括：
-   - 启用从 GLFW 回调层防止候选词显示时控制按键泄漏至游戏的补丁（[#104](https://github.com/reserveword/IMBlocker/issues/104)）
-   - 可配置的 IBus/Fcitx5 输入法控制终端命令（[#112](https://github.com/reserveword/IMBlocker/issues/112)）
+   - 启用从 GLFW 回调层防止候选词显示时控制按键泄漏至游戏的补丁
+   - 可配置的 IBus/Fcitx5 输入法控制终端命令
    
 <br>
 
@@ -118,7 +118,7 @@ Windows 游戏内输入法已完成全版本移植
 <br>
 
 # 5.4.1.1
- - 在游戏主类访问接口的类加载阶段创建实例以避免空指针访问（[#109](https://github.com/reserveword/IMBlocker/issues/109)）
+ - 在游戏主类访问接口的类加载阶段创建实例以避免空指针访问
 
 <br>
 
@@ -130,14 +130,14 @@ Windows 游戏内输入法已完成全版本移植
 <br>
 
 # 5.4.0.1
- - 修复 Fabric 游戏版本检测方法中漏掉的[等号](https://github.com/LitnhJacuzzi/IMBlocker/compare/95fdfc0..97349f3#diff-9e06d162918f68b78952fbb0bff96702d32c6701944743ffcad7edddfedbe301R19)
+ - 修复 Fabric 游戏版本检测方法中漏掉的
 
 <br>
 
 # 5.4.0
 **此版本包含重要的技术和功能更新**
 ## 修复与改进
- - 在类加载阶段创建默认配置实例以避免空指针访问（[#105](https://github.com/reserveword/IMBlocker/issues/105)）
+ - 在类加载阶段创建默认配置实例以避免空指针访问
  - (Neo)Forge 现在包含所有已兼容模组的注入类以支持信雅互联
  - 修复 Axiom 编辑器打开时输入法候选框位置未随游戏内容偏移的问题
  - 修复屏幕白名单配置项编辑后需要重启游戏才生效的问题
@@ -160,13 +160,13 @@ Windows 游戏内输入法已完成全版本移植
 **⚠注意⚠：此版本更新内容较多，请仔细阅读更新日志**
 ## 修复与改进
  - **从此版本开始，所有平台统一使用 Cloth Config 管理配置项，如需更改默认配置，请安装它！**  
- - 修复 ModMenu 以外的模组菜单无法打开配置界面的问题（[#96](https://github.com/reserveword/IMBlocker/issues/96)）  
- - 修复 Minecraft 1.21.6 启动游戏崩溃的问题（[#100](https://github.com/reserveword/IMBlocker/issues/100)）  
- - 添加 Windows 兼容性设置配置选项，帮助解决部分输入法的兼容问题（[#98](https://github.com/reserveword/IMBlocker/issues/98)）  
+ - 修复 ModMenu 以外的模组菜单无法打开配置界面的问题
+ - 修复 Minecraft 1.21.6 启动游戏崩溃的问题
+ - 添加 Windows 兼容性设置配置选项，帮助解决部分输入法的兼容问题
  - Windows：文本光标超出文本框边界时候选词框将定位至距其最近的文本框边界  
- - 白名单屏幕匹配机制现在为`instanceof`（**此配置项可能需要重新编辑，详见[下文](#白名单调整说明)**）  
+ - 白名单屏幕匹配机制现在为`instanceof
  - 改进了 Windows 全屏模式下的窗口属性，使其能还原到正确的窗口状态  
- - 更新模组 Logo（by [@Halogly](https://github.com/Halogly)，[#101](https://github.com/reserveword/IMBlocker/issues/101)）
+ - 更新模组 Logo
 ### 白名单调整说明
 从先前的版本更新至此版本后，屏幕白名单配置项需要作出一定调整。为降低操作门槛，这里直接给出具体调整步骤，**在完成第三个步骤前先不要更新模组版本**：
 - 首先记录下当前的屏幕白名单为列表 A
@@ -180,14 +180,14 @@ Windows 游戏内输入法已完成全版本移植
 <br>
 
 # 5.2.2
- - 修复原版文本框小概率出现的无效文本光标索引导致的崩溃（[#93](https://github.com/reserveword/IMBlocker/issues/93)）  
+ - 修复原版文本框小概率出现的无效文本光标索引导致的崩溃
  - 增强对多行文本框的支持（原版/FTB Library）
 
 <br>
 
 # 5.2.1
  - NeoForge：修复屏幕记录功能失效的问题  
- - Fabric：支持 [LibGui](https://github.com/CottonMC/LibGui)  
+ - Fabric：支持
  - Fabric/NeoForge：完全适配 Reese's Sodium Options  
 
 现在输入法候选框可实时追踪除 Axiom 外所有已兼容模组的文本光标（Axiom 组件非 Java 实现注入成本较大）
@@ -203,7 +203,7 @@ Forge -> 1.16.5, 1.17~1.20.4
 
 # 5.1.2
 ## 修复与改进
- - 修复调用FTB内部组件方法可能导致的空指针异常（[#88](https://github.com/reserveword/IMBlocker/issues/88)）  
+ - 修复调用FTB内部组件方法可能导致的空指针异常
  - 防止模组内部系统方法与被注入类的方法重名，这可能会解决一些潜在的冲突  
 ## 新功能
  - 输入法候选框现在可以实时跟踪 Meteor Client 的文本光标
